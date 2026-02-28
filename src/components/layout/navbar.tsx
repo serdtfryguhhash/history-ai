@@ -17,6 +17,7 @@ import {
   Users,
   X,
 } from "lucide-react";
+import { StreakBadge } from "@/components/shared/StreakBadge";
 
 const navLinks = [
   { href: "/ask", label: "Ask History", icon: MessageSquare },
@@ -66,6 +67,7 @@ export default function Navbar() {
 
           {/* Auth Buttons */}
           <div className="hidden lg:flex items-center gap-3">
+            <StreakBadge />
             <Link href="/login">
               <Button variant="ghost" size="sm">
                 Sign In
