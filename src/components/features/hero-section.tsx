@@ -8,17 +8,17 @@ import { ArrowRight, MessageSquare, Sparkles, BookOpen } from "lucide-react";
 
 export default function HeroSection() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-parchment via-parchment-100 to-parchment-200">
+    <section className="relative overflow-hidden bg-transparent">
       {/* Decorative background elements */}
       <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-20 left-10 text-[200px] font-display text-primary/10 select-none -rotate-12">
+        <div className="absolute top-20 left-10 text-[200px] font-display text-white/5 select-none -rotate-12">
           I
         </div>
-        <div className="absolute bottom-20 right-10 text-[150px] font-display text-primary/10 select-none rotate-6">
+        <div className="absolute bottom-20 right-10 text-[150px] font-display text-white/5 select-none rotate-6">
           V
         </div>
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full border border-accent/10" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full border border-accent/10" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full border border-white/10" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full border border-white/10" />
       </div>
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 md:py-32">
@@ -39,7 +39,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="font-display text-5xl md:text-6xl lg:text-7xl font-bold text-ink leading-[1.1] mb-6"
+            className="font-display text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.1] mb-6"
           >
             The Past Has{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-secondary to-accent">
@@ -53,7 +53,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="font-body text-lg md:text-xl text-ink-400 max-w-2xl mx-auto mb-10 leading-relaxed"
+            className="font-body text-lg md:text-xl text-white/80 max-w-2xl mx-auto mb-10 leading-relaxed"
           >
             Describe any modern challenge and our AI finds the historical parallels, cites the sources,
             and extracts the timeless lessons. Chat with 500+ historical figures. Learn from 5,000 years
@@ -96,8 +96,8 @@ export default function HeroSection() {
               { value: "50K+", label: "Conversations" },
             ].map((stat, i) => (
               <div key={i} className="text-center">
-                <div className="font-display text-3xl md:text-4xl font-bold text-primary">{stat.value}</div>
-                <div className="font-body text-sm text-ink-400 mt-1">{stat.label}</div>
+                <div className="font-display text-3xl md:text-4xl font-bold text-amber-400">{stat.value}</div>
+                <div className="font-body text-sm text-white/60 mt-1">{stat.label}</div>
               </div>
             ))}
           </motion.div>
@@ -105,7 +105,7 @@ export default function HeroSection() {
       </div>
 
       {/* Bottom fade */}
-      <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-parchment to-transparent" />
+      <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-black/30 to-transparent" />
     </section>
   );
 }

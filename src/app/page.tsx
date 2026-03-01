@@ -82,7 +82,7 @@ export default function HomePage() {
       <HeroSection />
 
       {/* Features Section */}
-      <section className="py-20 bg-parchment">
+      <section className="py-20 bg-black/40 backdrop-blur-sm">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -90,13 +90,13 @@ export default function HomePage() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <Badge variant="parchment" className="mb-4 font-mono">
+            <Badge variant="parchment" className="mb-4 font-mono bg-white/10 border-white/20 text-white/80">
               Features
             </Badge>
-            <h2 className="font-display text-3xl md:text-4xl font-bold text-ink mb-4">
+            <h2 className="font-display text-3xl md:text-4xl font-bold text-white mb-4">
               5,000 Years of Wisdom, One Platform
             </h2>
-            <p className="font-body text-ink-400 max-w-2xl mx-auto">
+            <p className="font-body text-white/70 max-w-2xl mx-auto">
               History.ai combines AI technology with comprehensive historical scholarship to help you
               learn from humanity&apos;s collective experience.
             </p>
@@ -112,15 +112,15 @@ export default function HomePage() {
                 transition={{ delay: index * 0.1 }}
               >
                 <Link href={feature.href}>
-                  <Card className="h-full hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group">
+                  <Card className="h-full hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group bg-white/10 border-white/20 backdrop-blur-sm">
                     <CardContent className="p-6">
-                      <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 mb-4 group-hover:bg-primary/20 transition-colors">
-                        <feature.icon className="h-6 w-6 text-primary" />
+                      <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-amber-400/20 mb-4 group-hover:bg-amber-400/30 transition-colors">
+                        <feature.icon className="h-6 w-6 text-amber-400" />
                       </div>
-                      <h3 className="font-display text-xl font-bold text-ink group-hover:text-primary transition-colors mb-2">
+                      <h3 className="font-display text-xl font-bold text-white group-hover:text-amber-400 transition-colors mb-2">
                         {feature.title}
                       </h3>
-                      <p className="font-body text-sm text-ink-400 leading-relaxed">
+                      <p className="font-body text-sm text-white/70 leading-relaxed">
                         {feature.description}
                       </p>
                     </CardContent>
@@ -133,19 +133,19 @@ export default function HomePage() {
       </section>
 
       {/* Featured Figures */}
-      <section className="py-20 bg-parchment-100">
+      <section className="py-20 bg-black/30 backdrop-blur-sm">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between mb-12">
             <div>
-              <Badge variant="parchment" className="mb-3 font-mono">
+              <Badge variant="parchment" className="mb-3 font-mono bg-white/10 border-white/20 text-white/80">
                 Historical Figures
               </Badge>
-              <h2 className="font-display text-3xl md:text-4xl font-bold text-ink">
+              <h2 className="font-display text-3xl md:text-4xl font-bold text-white">
                 Converse With History&apos;s Greatest Minds
               </h2>
             </div>
             <Link href="/figures">
-              <Button variant="outline" className="hidden md:flex gap-2">
+              <Button variant="outline" className="hidden md:flex gap-2 border-white/30 text-white hover:bg-white/10">
                 View All Figures
                 <ArrowRight className="h-4 w-4" />
               </Button>
@@ -160,7 +160,7 @@ export default function HomePage() {
 
           <div className="mt-8 text-center md:hidden">
             <Link href="/figures">
-              <Button variant="outline" className="gap-2">
+              <Button variant="outline" className="gap-2 border-white/30 text-white hover:bg-white/10">
                 View All Figures
                 <ArrowRight className="h-4 w-4" />
               </Button>
@@ -187,7 +187,7 @@ export default function HomePage() {
       </section>
 
       {/* Daily Digest Preview */}
-      <section className="py-20 bg-parchment">
+      <section className="py-20 bg-black/40 backdrop-blur-sm">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <motion.div
@@ -195,13 +195,13 @@ export default function HomePage() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
             >
-              <Badge variant="parchment" className="mb-3 font-mono">
+              <Badge variant="parchment" className="mb-3 font-mono bg-white/10 border-white/20 text-white/80">
                 Daily Digest
               </Badge>
-              <h2 className="font-display text-3xl md:text-4xl font-bold text-ink mb-4">
+              <h2 className="font-display text-3xl md:text-4xl font-bold text-white mb-4">
                 History That Matters Today
               </h2>
-              <p className="font-body text-ink-400 mb-6 leading-relaxed">
+              <p className="font-body text-white/70 mb-6 leading-relaxed">
                 Every day, we curate a historical fact with modern relevance. Share it, discuss it,
                 and add it to your understanding of how the past illuminates the present.
               </p>
@@ -225,16 +225,16 @@ export default function HomePage() {
       </section>
 
       {/* Lessons Preview */}
-      <section className="py-20 bg-parchment-100">
+      <section className="py-20 bg-black/30 backdrop-blur-sm">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <Badge variant="parchment" className="mb-3 font-mono">
+            <Badge variant="parchment" className="mb-3 font-mono bg-white/10 border-white/20 text-white/80">
               Lessons Library
             </Badge>
-            <h2 className="font-display text-3xl md:text-4xl font-bold text-ink mb-4">
+            <h2 className="font-display text-3xl md:text-4xl font-bold text-white mb-4">
               Curated Wisdom From the Ages
             </h2>
-            <p className="font-body text-ink-400 max-w-2xl mx-auto">
+            <p className="font-body text-white/70 max-w-2xl mx-auto">
               In-depth lessons drawn from real historical events, curated by category for practical
               modern application.
             </p>
@@ -250,20 +250,20 @@ export default function HomePage() {
                 transition={{ delay: index * 0.1 }}
               >
                 <Link href={`/lessons/${lesson.slug}`}>
-                  <Card className="h-full hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group">
+                  <Card className="h-full hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group bg-white/10 border-white/20 backdrop-blur-sm">
                     <CardContent className="p-6">
                       <div className="flex items-center gap-2 mb-3">
                         <Badge variant="accent">{lesson.category}</Badge>
-                        <span className="font-mono text-xs text-ink-300">{lesson.read_time} min read</span>
+                        <span className="font-mono text-xs text-white/50">{lesson.read_time} min read</span>
                       </div>
-                      <h3 className="font-display text-xl font-bold text-ink group-hover:text-primary transition-colors mb-2">
+                      <h3 className="font-display text-xl font-bold text-white group-hover:text-amber-400 transition-colors mb-2">
                         {lesson.title}
                       </h3>
-                      <p className="font-body text-sm text-ink-400 mb-4">{lesson.subtitle}</p>
+                      <p className="font-body text-sm text-white/70 mb-4">{lesson.subtitle}</p>
                       <div className="flex flex-wrap gap-1">
                         {lesson.key_takeaways.slice(0, 2).map((takeaway, i) => (
-                          <div key={i} className="flex items-start gap-1.5 text-xs font-body text-ink-400">
-                            <Lightbulb className="h-3.5 w-3.5 text-accent shrink-0 mt-0.5" />
+                          <div key={i} className="flex items-start gap-1.5 text-xs font-body text-white/60">
+                            <Lightbulb className="h-3.5 w-3.5 text-amber-400 shrink-0 mt-0.5" />
                             <span className="line-clamp-1">{takeaway}</span>
                           </div>
                         ))}
@@ -277,7 +277,7 @@ export default function HomePage() {
 
           <div className="mt-8 text-center">
             <Link href="/lessons">
-              <Button variant="outline" className="gap-2">
+              <Button variant="outline" className="gap-2 border-white/30 text-white hover:bg-white/10">
                 Browse All Lessons
                 <ArrowRight className="h-4 w-4" />
               </Button>
@@ -287,20 +287,20 @@ export default function HomePage() {
       </section>
 
       {/* Ask History CTA */}
-      <section className="py-20 bg-parchment">
+      <section className="py-20 bg-black/50 backdrop-blur-sm">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-primary/10 mb-6 mx-auto">
-              <History className="h-8 w-8 text-primary" />
+            <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-amber-400/20 mb-6 mx-auto">
+              <History className="h-8 w-8 text-amber-400" />
             </div>
-            <h2 className="font-display text-3xl md:text-4xl font-bold text-ink mb-4">
+            <h2 className="font-display text-3xl md:text-4xl font-bold text-white mb-4">
               What Would History Do?
             </h2>
-            <p className="font-body text-ink-400 max-w-xl mx-auto mb-8">
+            <p className="font-body text-white/70 max-w-xl mx-auto mb-8">
               Every problem you face has been faced before—by emperors, generals, scientists, and
               revolutionaries. Let their experience guide your decisions.
             </p>

@@ -9,7 +9,6 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-import { getInitials } from "@/lib/utils";
 import {
   ArrowLeft,
   BookOpen,
@@ -55,10 +54,12 @@ export default function FigureProfilePage({ figure }: FigureProfilePageProps) {
               className="lg:col-span-2"
             >
               <div className="flex items-start gap-6 mb-6">
-                <div className="flex h-20 w-20 md:h-24 md:w-24 items-center justify-center rounded-2xl bg-primary/15 border-2 border-accent/30 shrink-0">
-                  <span className="font-display text-3xl md:text-4xl font-bold text-primary">
-                    {getInitials(figure.name)}
-                  </span>
+                <div className="h-20 w-20 md:h-24 md:w-24 rounded-2xl overflow-hidden border-2 border-accent/30 shrink-0">
+                  <img
+                    src={figure.image_url}
+                    alt={figure.name}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div>
                   <h1 className="font-display text-3xl md:text-4xl font-bold text-ink">{figure.name}</h1>

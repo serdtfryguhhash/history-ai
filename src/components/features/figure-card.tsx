@@ -6,7 +6,6 @@ import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { HistoricalFigure } from "@/types";
-import { getInitials } from "@/lib/utils";
 import { MessageSquare, Quote } from "lucide-react";
 
 interface FigureCardProps {
@@ -24,16 +23,16 @@ export default function FigureCard({ figure, index = 0 }: FigureCardProps) {
       <Link href={`/figures/${figure.slug}`}>
         <Card className="group hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer overflow-hidden h-full">
           {/* Portrait Area */}
-          <div className="relative h-48 bg-gradient-to-br from-primary/10 via-secondary/10 to-accent/10 flex items-center justify-center overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-t from-parchment-50/80 to-transparent z-10" />
-            <div className="relative z-0 flex h-24 w-24 items-center justify-center rounded-full bg-primary/20 border-2 border-accent/30">
-              <span className="font-display text-3xl font-bold text-primary">
-                {getInitials(figure.name)}
-              </span>
-            </div>
+          <div className="relative h-48 overflow-hidden">
+            <img
+              src={figure.image_url}
+              alt={figure.name}
+              className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-parchment-50 via-transparent to-transparent z-10" />
             {/* Era Badge */}
             <div className="absolute top-3 right-3 z-20">
-              <Badge variant="parchment" className="text-[10px] font-mono">
+              <Badge variant="parchment" className="text-[10px] font-mono backdrop-blur-sm">
                 {figure.era}
               </Badge>
             </div>

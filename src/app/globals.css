@@ -78,3 +78,46 @@
 ::-webkit-scrollbar-thumb:hover {
   @apply bg-accent/50;
 }
+
+/* Soarin' Background - Ken Burns Effect Animations */
+@keyframes soarin-zoom-tl {
+  0% { transform: scale(1) translate(0, 0); }
+  100% { transform: scale(1.3) translate(-5%, -5%); }
+}
+@keyframes soarin-zoom-tr {
+  0% { transform: scale(1) translate(0, 0); }
+  100% { transform: scale(1.3) translate(5%, -5%); }
+}
+@keyframes soarin-zoom-bl {
+  0% { transform: scale(1) translate(0, 0); }
+  100% { transform: scale(1.3) translate(-5%, 5%); }
+}
+@keyframes soarin-zoom-br {
+  0% { transform: scale(1) translate(0, 0); }
+  100% { transform: scale(1.3) translate(5%, 5%); }
+}
+@keyframes soarin-pan-left {
+  0% { transform: scale(1.2) translate(5%, 0); }
+  100% { transform: scale(1.2) translate(-5%, 0); }
+}
+@keyframes soarin-pan-right {
+  0% { transform: scale(1.2) translate(-5%, 0); }
+  100% { transform: scale(1.2) translate(5%, 0); }
+}
+@keyframes soarin-zoom-center {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.35); }
+}
+@keyframes soarin-zoom-out {
+  0% { transform: scale(1.35); }
+  100% { transform: scale(1); }
+}
+
+.soarin-zoom-tl { animation: soarin-zoom-tl 10s ease-in-out forwards; }
+.soarin-zoom-tr { animation: soarin-zoom-tr 10s ease-in-out forwards; }
+.soarin-zoom-bl { animation: soarin-zoom-bl 10s ease-in-out forwards; }
+.soarin-zoom-br { animation: soarin-zoom-br 10s ease-in-out forwards; }
+.soarin-pan-left { animation: soarin-pan-left 10s ease-in-out forwards; }
+.soarin-pan-right { animation: soarin-pan-right 10s ease-in-out forwards; }
+.soarin-zoom-center { animation: soarin-zoom-center 10s ease-in-out forwards; }
+.soarin-zoom-out { animation: soarin-zoom-out 10s ease-in-out forwards; }

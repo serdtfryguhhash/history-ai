@@ -33,7 +33,7 @@ export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 border-b border-accent/20 bg-parchment/95 backdrop-blur-md">
+    <nav className="sticky top-0 z-50 border-b border-white/10 bg-black/40 backdrop-blur-xl">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
@@ -42,10 +42,10 @@ export default function Navbar() {
               <BookOpen className="h-5 w-5" />
             </div>
             <div className="flex flex-col">
-              <span className="font-display text-xl font-bold text-primary leading-tight">
+              <span className="font-display text-xl font-bold text-white leading-tight">
                 History.ai
               </span>
-              <span className="text-[10px] font-mono text-accent -mt-1 hidden sm:block">
+              <span className="text-[10px] font-mono text-amber-400/80 -mt-1 hidden sm:block">
                 Wisdom of the Ages
               </span>
             </div>
@@ -57,7 +57,7 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="flex items-center gap-1.5 px-3 py-2 rounded-lg text-sm font-body text-ink-500 hover:text-primary hover:bg-primary/5 transition-colors"
+                className="flex items-center gap-1.5 px-3 py-2 rounded-lg text-sm font-body text-white/70 hover:text-white hover:bg-white/10 transition-colors"
               >
                 <link.icon className="h-4 w-4" />
                 {link.label}
@@ -80,10 +80,10 @@ export default function Navbar() {
 
           {/* Mobile Menu Button */}
           <button
-            className="lg:hidden p-2 rounded-lg hover:bg-primary/5"
+            className="lg:hidden p-2 rounded-lg hover:bg-white/10"
             onClick={() => setMobileOpen(!mobileOpen)}
           >
-            {mobileOpen ? <X className="h-6 w-6 text-primary" /> : <Menu className="h-6 w-6 text-primary" />}
+            {mobileOpen ? <X className="h-6 w-6 text-white" /> : <Menu className="h-6 w-6 text-white" />}
           </button>
         </div>
       </div>
@@ -95,7 +95,7 @@ export default function Navbar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="lg:hidden border-t border-accent/20 bg-parchment"
+            className="lg:hidden border-t border-white/10 bg-black/80 backdrop-blur-xl"
           >
             <div className="px-4 py-4 space-y-1">
               {navLinks.map((link) => (
@@ -103,7 +103,7 @@ export default function Navbar() {
                   key={link.href}
                   href={link.href}
                   onClick={() => setMobileOpen(false)}
-                  className="flex items-center gap-3 px-4 py-3 rounded-lg text-ink-500 hover:text-primary hover:bg-primary/5 transition-colors"
+                  className="flex items-center gap-3 px-4 py-3 rounded-lg text-white/70 hover:text-white hover:bg-white/10 transition-colors"
                 >
                   <link.icon className="h-5 w-5" />
                   <span className="font-body">{link.label}</span>
