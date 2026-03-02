@@ -7,11 +7,16 @@ interface Props {
   params: { slug: string };
 }
 
+// Only pre-generate the first 50 most popular figures at build time
+// The rest will be generated on-demand (ISR)
 export async function generateStaticParams() {
-  return historicalFigures.map((figure) => ({
+  return historicalFigures.slice(0, 50).map((figure) => ({
     slug: figure.slug,
   }));
 }
+
+// Allow dynamic params for figures not pre-generated
+export const dynamicParams = true;
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const figure = getFigureBySlug(params.slug);

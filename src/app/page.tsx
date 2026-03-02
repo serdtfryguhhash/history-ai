@@ -7,6 +7,7 @@ import HeroSection from "@/components/features/hero-section";
 import FigureCard from "@/components/features/figure-card";
 import NewsletterSignup from "@/components/features/newsletter-signup";
 import DailyDigestCard from "@/components/features/daily-digest-card";
+import ThisDayInHistory from "@/components/features/this-day-in-history";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -80,6 +81,9 @@ export default function HomePage() {
     <div>
       {/* Hero Section */}
       <HeroSection />
+
+      {/* On This Day in History */}
+      <ThisDayInHistory />
 
       {/* Features Section */}
       <section className="py-20 bg-black/40 backdrop-blur-sm">

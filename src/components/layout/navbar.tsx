@@ -8,8 +8,8 @@ import {
   BookOpen,
   Clock,
   GraduationCap,
-
   Menu,
+  MessageCircle,
   MessageSquare,
   Newspaper,
   Scroll,
@@ -19,9 +19,17 @@ import {
 } from "lucide-react";
 import { StreakBadge } from "@/components/shared/StreakBadge";
 
-const navLinks = [
+interface NavLink {
+  href: string;
+  label: string;
+  icon: React.ComponentType<{ className?: string }>;
+  highlight?: boolean;
+}
+
+const navLinks: NavLink[] = [
   { href: "/ask", label: "Ask History", icon: MessageSquare },
   { href: "/figures", label: "Figures", icon: Users },
+  { href: "/chat-demo", label: "Try Chat Demo", icon: MessageCircle, highlight: true },
   { href: "/timelines", label: "Timelines", icon: Clock },
   { href: "/lessons", label: "Lessons", icon: GraduationCap },
   { href: "/daily", label: "Daily Digest", icon: Sparkles },
@@ -57,7 +65,11 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="flex items-center gap-1.5 px-3 py-2 rounded-lg text-sm font-body text-white/70 hover:text-white hover:bg-white/10 transition-colors"
+                className={`flex items-center gap-1.5 px-3 py-2 rounded-lg text-sm font-body transition-colors ${
+                  link.highlight
+                    ? "text-amber-400 bg-amber-400/10 hover:bg-amber-400/20 hover:text-amber-300 font-semibold"
+                    : "text-white/70 hover:text-white hover:bg-white/10"
+                }`}
               >
                 <link.icon className="h-4 w-4" />
                 {link.label}
@@ -103,7 +115,11 @@ export default function Navbar() {
                   key={link.href}
                   href={link.href}
                   onClick={() => setMobileOpen(false)}
-                  className="flex items-center gap-3 px-4 py-3 rounded-lg text-white/70 hover:text-white hover:bg-white/10 transition-colors"
+                  className={`flex items-center gap-3 px-4 py-3 rounded-lg transition-colors ${
+                    link.highlight
+                      ? "text-amber-400 bg-amber-400/10 hover:bg-amber-400/20 font-semibold"
+                      : "text-white/70 hover:text-white hover:bg-white/10"
+                  }`}
                 >
                   <link.icon className="h-5 w-5" />
                   <span className="font-body">{link.label}</span>
