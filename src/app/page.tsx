@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import HeroSection from "@/components/features/hero-section";
@@ -8,23 +8,31 @@ import FigureCard from "@/components/features/figure-card";
 import NewsletterSignup from "@/components/features/newsletter-signup";
 import DailyDigestCard from "@/components/features/daily-digest-card";
 import ThisDayInHistory from "@/components/features/this-day-in-history";
+import { WeeklyDigest } from "@/components/features/weekly-digest";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { historicalFigures } from "@/data/figures";
 import { lessons } from "@/data/lessons";
 import { dailyDigests } from "@/data/daily-digests";
+import { getXPData, getRankForXP, getProgressToNextRank, RANK_THRESHOLDS } from "@/lib/gamification";
+import { getLearningStreak, getProgressData } from "@/lib/progress-tracker";
 import {
   ArrowRight,
+  Brain,
   Clock,
+  Flame,
   GraduationCap,
   History,
+  Map,
   MessageSquare,
   Newspaper,
-  Sparkles,
-  Users,
   Quote,
+  Sparkles,
+  Star,
+  Swords,
   Lightbulb,
+  Users,
 } from "lucide-react";
 
 const features = [
@@ -51,24 +59,24 @@ const features = [
   },
   {
     icon: GraduationCap,
-    title: "Lessons Library",
+    title: "Learning Paths",
     description:
-      "Curated historical lessons on Leadership, Strategy, Economics, Innovation, and more—with real examples.",
-    href: "/lessons",
+      "Multi-week curated journeys through history. Daily figures, readings, and reflection questions.",
+    href: "/paths",
   },
   {
-    icon: Sparkles,
-    title: "Daily History Digest",
+    icon: Brain,
+    title: "Daily History Quiz",
     description:
-      "Every day, a curated historical fact with modern relevance. Shareable social cards for your network.",
-    href: "/daily",
+      "AI-generated quizzes based on your learning history. Track your scores and build a quiz streak.",
+    href: "/quiz",
   },
   {
-    icon: Newspaper,
-    title: "Weekly Newsletter",
+    icon: Swords,
+    title: "Debate Mode",
     description:
-      '"This Week in History That Still Matters." Join 10,000+ history enthusiasts who learn from the past.',
-    href: "/blog",
+      "Argue history's biggest questions against an AI opponent. Get scored on your historical reasoning.",
+    href: "/debate",
   },
 ];
 
@@ -77,10 +85,60 @@ export default function HomePage() {
   const todayDigest = dailyDigests[0];
   const featuredLessons = lessons.slice(0, 3);
 
+  const [xp, setXP] = useState(0);
+  const [rank, setRank] = useState("Student");
+  const [progress, setProgress] = useState({ current: 0, needed: 1, percentage: 0 });
+  const [streak, setStreak] = useState(0);
+  const [figuresExplored, setFiguresExplored] = useState(0);
+
+  useEffect(() => {
+    const xpData = getXPData();
+    setXP(xpData.totalXP);
+    setRank(getRankForXP(xpData.totalXP));
+    setProgress(getProgressToNextRank(xpData.totalXP));
+    setStreak(getLearningStreak());
+    const pd = getProgressData();
+    setFiguresExplored(pd.viewedFigures.length);
+  }, []);
+
   return (
     <div>
       {/* Hero Section */}
       <HeroSection />
+
+      {/* Personal Dashboard Bar */}
+      <section className="py-6 bg-black/50 backdrop-blur-sm border-b border-white/10">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-wrap items-center justify-center gap-6">
+            <div className="flex items-center gap-2 px-4 py-2 rounded-xl bg-amber-400/10 border border-amber-400/20">
+              <Star className="h-4 w-4 text-amber-400" />
+              <span className="font-display text-sm font-bold text-amber-400">{rank}</span>
+              <span className="font-mono text-xs text-white/50">{xp} XP</span>
+              <div className="w-20 h-1.5 bg-white/10 rounded-full overflow-hidden ml-1">
+                <div
+                  className="h-full bg-amber-400 rounded-full transition-all duration-500"
+                  style={{ width: `${progress.percentage}%` }}
+                />
+              </div>
+            </div>
+            <div className="flex items-center gap-2 px-4 py-2 rounded-xl bg-orange-500/10 border border-orange-500/20">
+              <Flame className="h-4 w-4 text-orange-400" />
+              <span className="font-display text-sm font-bold text-orange-400">{streak}</span>
+              <span className="font-body text-xs text-white/50">day streak</span>
+            </div>
+            <div className="flex items-center gap-2 px-4 py-2 rounded-xl bg-white/5 border border-white/10">
+              <Users className="h-4 w-4 text-white/50" />
+              <span className="font-mono text-sm text-white/60">{figuresExplored} figures explored</span>
+            </div>
+            <Link href="/knowledge-map">
+              <Button variant="ghost" size="sm" className="gap-1.5 text-amber-400 hover:text-amber-300 hover:bg-amber-400/10">
+                <Map className="h-4 w-4" />
+                Knowledge Map
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
 
       {/* On This Day in History */}
       <ThisDayInHistory />
@@ -190,10 +248,10 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Daily Digest Preview */}
+      {/* Daily Digest + Weekly Digest */}
       <section className="py-20 bg-black/40 backdrop-blur-sm">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -210,19 +268,22 @@ export default function HomePage() {
                 and add it to your understanding of how the past illuminates the present.
               </p>
               <Link href="/daily">
-                <Button className="gap-2">
+                <Button className="gap-2 mb-8">
                   See All Digests
                   <ArrowRight className="h-4 w-4" />
                 </Button>
               </Link>
+
+              <DailyDigestCard digest={todayDigest} />
             </motion.div>
 
             <motion.div
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
+              className="space-y-6"
             >
-              <DailyDigestCard digest={todayDigest} />
+              <WeeklyDigest />
             </motion.div>
           </div>
         </div>

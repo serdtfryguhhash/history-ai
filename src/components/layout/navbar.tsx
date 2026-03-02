@@ -6,18 +6,22 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import {
   BookOpen,
+  Brain,
   Clock,
   GraduationCap,
+  Map,
   Menu,
   MessageCircle,
   MessageSquare,
   Newspaper,
   Scroll,
   Sparkles,
+  Swords,
   Users,
   X,
 } from "lucide-react";
 import { StreakBadge } from "@/components/shared/StreakBadge";
+import { XPBar } from "@/components/shared/XPBar";
 
 interface NavLink {
   href: string;
@@ -29,9 +33,13 @@ interface NavLink {
 const navLinks: NavLink[] = [
   { href: "/ask", label: "Ask History", icon: MessageSquare },
   { href: "/figures", label: "Figures", icon: Users },
-  { href: "/chat-demo", label: "Try Chat Demo", icon: MessageCircle, highlight: true },
+  { href: "/conversations", label: "Conversations", icon: MessageCircle, highlight: true },
+  { href: "/knowledge-map", label: "Knowledge Map", icon: Map },
+  { href: "/paths", label: "Paths", icon: GraduationCap },
+  { href: "/quiz", label: "Quiz", icon: Brain },
+  { href: "/debate", label: "Debate", icon: Swords },
   { href: "/timelines", label: "Timelines", icon: Clock },
-  { href: "/lessons", label: "Lessons", icon: GraduationCap },
+  { href: "/lessons", label: "Lessons", icon: BookOpen },
   { href: "/daily", label: "Daily Digest", icon: Sparkles },
   { href: "/blog", label: "Blog", icon: Newspaper },
   { href: "/pricing", label: "Pricing", icon: Scroll },
@@ -79,6 +87,7 @@ export default function Navbar() {
 
           {/* Auth Buttons */}
           <div className="hidden lg:flex items-center gap-3">
+            <XPBar />
             <StreakBadge />
             <Link href="/login">
               <Button variant="ghost" size="sm">
@@ -110,6 +119,11 @@ export default function Navbar() {
             className="lg:hidden border-t border-white/10 bg-black/80 backdrop-blur-xl"
           >
             <div className="px-4 py-4 space-y-1">
+              {/* Mobile XP and Streak */}
+              <div className="flex items-center gap-3 px-4 py-2 mb-2">
+                <XPBar />
+                <StreakBadge />
+              </div>
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
