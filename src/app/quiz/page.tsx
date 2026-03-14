@@ -353,7 +353,7 @@ export default function QuizPage() {
                   ? "Perfect score! You are a true history scholar!"
                   : score >= 3
                   ? "Great job! Keep learning to improve!"
-                  : "Keep exploring — every quiz makes you stronger!"}
+                  : "Keep exploring - every quiz makes you stronger!"}
               </p>
 
               <div className="flex items-center justify-center gap-4">

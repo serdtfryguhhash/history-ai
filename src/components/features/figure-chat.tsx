@@ -26,7 +26,7 @@ export default function FigureChat({ figure }: FigureChatProps) {
     {
       id: "welcome",
       role: "assistant",
-      content: `Greetings. I am ${figure.name}, ${figure.title}. I have lived through extraordinary times—${figure.era}—and I carry the weight of experience from ${figure.born} to ${figure.died}. What would you ask of me? I shall answer as honestly as my nature allows.`,
+      content: `Greetings. I am ${figure.name}, ${figure.title}. I have lived through extraordinary times - ${figure.era} - and I carry the weight of experience from ${figure.born} to ${figure.died}. What would you ask of me? I shall answer as honestly as my nature allows.`,
       timestamp: new Date(),
     },
   ]);
@@ -82,7 +82,7 @@ export default function FigureChat({ figure }: FigureChatProps) {
       const errorMessage: Message = {
         id: (Date.now() + 1).toString(),
         role: "assistant",
-        content: "Forgive me—the connection between our ages has been momentarily disrupted. Please try again.",
+        content: "Forgive me - the connection between our ages has been momentarily disrupted. Please try again.",
         timestamp: new Date(),
       };
       setMessages((prev) => [...prev, errorMessage]);
@@ -103,7 +103,7 @@ export default function FigureChat({ figure }: FigureChatProps) {
         <div>
           <h3 className="font-display text-sm font-bold text-ink">{figure.name}</h3>
           <p className="font-mono text-[10px] text-ink-400">
-            {figure.born} — {figure.died}
+            {figure.born} - {figure.died}
           </p>
         </div>
         <Badge variant="parchment" className="ml-auto text-[10px] font-mono">

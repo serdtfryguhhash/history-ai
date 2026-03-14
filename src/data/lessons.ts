@@ -7,7 +7,7 @@ export const lessons: Lesson[] = [
     title: "Stoic Leadership in Times of Crisis",
     subtitle: "What Marcus Aurelius Can Teach Modern Leaders About Resilience",
     category: "Leadership",
-    content: `In 166 CE, the Roman Empire faced a crisis that would test any leader: the Antonine Plague swept through the empire, killing an estimated 5 million people—roughly 10% of the population. At the same time, Germanic tribes pressed against the northern frontiers, and the economy strained under the weight of constant warfare.
+    content: `In 166 CE, the Roman Empire faced a crisis that would test any leader: the Antonine Plague swept through the empire, killing an estimated 5 million people - roughly 10% of the population. At the same time, Germanic tribes pressed against the northern frontiers, and the economy strained under the weight of constant warfare.
 
 Emperor Marcus Aurelius faced this convergence of catastrophes not with panic, but with the disciplined philosophy he had practiced his entire life. His response offers a masterclass in crisis leadership that remains strikingly relevant.
 
@@ -15,23 +15,23 @@ Emperor Marcus Aurelius faced this convergence of catastrophes not with panic, b
 
 Marcus didn't face these crises without preparation. He had spent decades studying Stoic philosophy, which provided him with a framework for processing adversity. In his private journal (now known as Meditations), he wrote: "The happiness of your life depends upon the quality of your thoughts."
 
-This wasn't naive optimism—it was cognitive discipline. Marcus recognized that while he couldn't control the plague or the barbarians, he could control his response. This distinction between what we can and cannot control is the foundation of Stoic philosophy and, centuries later, of cognitive behavioral therapy.
+This wasn't naive optimism - it was cognitive discipline. Marcus recognized that while he couldn't control the plague or the barbarians, he could control his response. This distinction between what we can and cannot control is the foundation of Stoic philosophy and, centuries later, of cognitive behavioral therapy.
 
 ## Leading from the Front
 
-When the frontier wars demanded his presence, Marcus—who had no military training and preferred philosophy to warfare—personally commanded the Roman legions on the Danube for years. He didn't have to. He could have delegated. But he understood that visible leadership during crisis is not optional.
+When the frontier wars demanded his presence, Marcus - who had no military training and preferred philosophy to warfare - personally commanded the Roman legions on the Danube for years. He didn't have to. He could have delegated. But he understood that visible leadership during crisis is not optional.
 
 Modern parallel: During the 2008 financial crisis, the leaders who maintained credibility were those who communicated transparently and visibly took responsibility. Those who hid or deflected lost trust permanently.
 
 ## The Journal as Leadership Tool
 
-Marcus's habit of journaling—writing honest, private reflections on his thoughts and decisions—served as a powerful leadership tool. It allowed him to process complex decisions, check his own biases, and maintain emotional equilibrium.
+Marcus's habit of journaling - writing honest, private reflections on his thoughts and decisions - served as a powerful leadership tool. It allowed him to process complex decisions, check his own biases, and maintain emotional equilibrium.
 
 Research in organizational psychology confirms what Marcus intuited: reflective writing improves decision-making, reduces stress, and enhances emotional intelligence. Jeff Bezos, Bill Gates, and other modern leaders are known for similar reflective practices.
 
 ## Key Takeaways
 
-1. **Build your philosophy before the crisis.** Marcus's Stoicism wasn't developed during the plague—it was practiced for decades beforehand. Leaders need frameworks for adversity before adversity arrives.
+1. **Build your philosophy before the crisis.** Marcus's Stoicism wasn't developed during the plague - it was practiced for decades beforehand. Leaders need frameworks for adversity before adversity arrives.
 
 2. **Control what you can, accept what you cannot.** This Stoic principle reduces anxiety and focuses energy on productive action.
 
@@ -39,7 +39,7 @@ Research in organizational psychology confirms what Marcus intuited: reflective 
 
 4. **Maintain a reflective practice.** Whether journaling, meditation, or regular self-assessment, reflective habits improve leadership quality.
 
-5. **Remember mortality.** Marcus frequently meditated on death—not morbidly, but to maintain perspective and urgency. "You could leave life right now," he wrote. "Let that determine what you do and say and think."`,
+5. **Remember mortality.** Marcus frequently meditated on death - not morbidly, but to maintain perspective and urgency. "You could leave life right now," he wrote. "Let that determine what you do and say and think."`,
     historical_examples: [
       "Marcus Aurelius managing the Antonine Plague (166-180 CE)",
       "Seneca advising Emperor Nero under extreme pressure",
@@ -65,9 +65,9 @@ Research in organizational psychology confirms what Marcus intuited: reflective 
     title: "The Art of Strategic Patience",
     subtitle: "How History's Greatest Leaders Knew When to Wait and When to Strike",
     category: "War & Strategy",
-    content: `In 1805, Napoleon Bonaparte stood at the peak of his power. But his greatest victory—Austerlitz—was won not through aggression, but through patience. He deliberately weakened his right flank to lure the Allied armies into overextending, then struck with devastating force at their exposed center.
+    content: `In 1805, Napoleon Bonaparte stood at the peak of his power. But his greatest victory - Austerlitz - was won not through aggression, but through patience. He deliberately weakened his right flank to lure the Allied armies into overextending, then struck with devastating force at their exposed center.
 
-Strategic patience—the ability to wait for the right moment while appearing to act from weakness—is one of history's most powerful and least understood leadership skills.
+Strategic patience - the ability to wait for the right moment while appearing to act from weakness - is one of history's most powerful and least understood leadership skills.
 
 ## Fabius Maximus: The Original Patient Strategist
 
@@ -75,7 +75,7 @@ During the Second Punic War (218-201 BCE), Hannibal Barca invaded Italy with his
 
 The Senate appointed Quintus Fabius Maximus as dictator. His strategy? Refuse to fight. Instead, Fabius shadowed Hannibal's army, cutting off supplies, attacking foraging parties, and denying the decisive battle Hannibal needed. The Romans mocked him as "Cunctator" (the Delayer), but his strategy worked. Hannibal, unable to force a battle or maintain his supply lines, gradually weakened.
 
-The Fabian strategy—avoiding direct confrontation while gradually eroding an opponent's strength—has been employed successfully for over two millennia.
+The Fabian strategy - avoiding direct confrontation while gradually eroding an opponent's strength - has been employed successfully for over two millennia.
 
 ## Elizabeth I and the Spanish Armada
 
@@ -89,7 +89,7 @@ When the Armada finally sailed, English ships (faster and more maneuverable) har
 
 2. **Let your opponent overextend.** Many victories are won by allowing an adversary to commit resources prematurely.
 
-3. **Manage internal pressure to act.** The greatest challenge of strategic patience is often domestic—your own people demanding action.
+3. **Manage internal pressure to act.** The greatest challenge of strategic patience is often domestic - your own people demanding action.
 
 4. **Know when patience becomes inaction.** Fabius's strategy eventually needed to be complemented by Scipio Africanus's aggressive campaign in Africa. Pure patience without an endgame is just avoidance.
 
@@ -120,7 +120,7 @@ When the Armada finally sailed, English ships (faster and more maneuverable) har
     title: "Innovation Through Adversity",
     subtitle: "How History's Greatest Breakthroughs Were Born from Crisis",
     category: "Innovation",
-    content: `The Black Death of 1347-1353 killed roughly one-third of Europe's population—an estimated 25-50 million people. It was the worst catastrophe in European history. And yet, from this devastation emerged the conditions for the Renaissance: labor shortages increased workers' wages, weakened feudal structures, spurred technological innovation, and created new social mobility.
+    content: `The Black Death of 1347-1353 killed roughly one-third of Europe's population - an estimated 25-50 million people. It was the worst catastrophe in European history. And yet, from this devastation emerged the conditions for the Renaissance: labor shortages increased workers' wages, weakened feudal structures, spurred technological innovation, and created new social mobility.
 
 Throughout history, humanity's greatest leaps forward have often emerged from its darkest moments.
 
@@ -130,19 +130,19 @@ The relationship between adversity and innovation is not coincidental. Crises di
 
 **World War II and Technology**: The war produced radar, jet engines, nuclear energy, penicillin mass production, computers (including Colossus and ENIAC), and the foundations of the space program. The urgency of wartime survival compressed decades of normal development into years.
 
-**The Great Depression and Social Innovation**: FDR's New Deal didn't just create jobs—it established Social Security, the SEC, the FDIC, and labor protections that fundamentally restructured American society. Desperate times created political will for changes that would have been impossible in prosperity.
+**The Great Depression and Social Innovation**: FDR's New Deal didn't just create jobs - it established Social Security, the SEC, the FDIC, and labor protections that fundamentally restructured American society. Desperate times created political will for changes that would have been impossible in prosperity.
 
-**The Space Race**: Cold War competition between the US and USSR produced not just Moon landings but satellite communications, weather forecasting, GPS, water purification systems, and memory foam—technologies that transformed daily life.
+**The Space Race**: Cold War competition between the US and USSR produced not just Moon landings but satellite communications, weather forecasting, GPS, water purification systems, and memory foam - technologies that transformed daily life.
 
 ## Tesla and Edison: Adversity as Fuel
 
-Nikola Tesla arrived in America in 1884 with four cents in his pocket, a few poems, and a letter of introduction to Thomas Edison. When Edison dismissed Tesla's AC power system, Tesla spent years in poverty—digging ditches to survive—before George Westinghouse backed his vision.
+Nikola Tesla arrived in America in 1884 with four cents in his pocket, a few poems, and a letter of introduction to Thomas Edison. When Edison dismissed Tesla's AC power system, Tesla spent years in poverty - digging ditches to survive - before George Westinghouse backed his vision.
 
 Tesla's adversity didn't diminish his innovation; it clarified it. Freed from Edison's constraints, he developed the AC system that would power the world.
 
 ## Key Takeaways
 
-1. **Crises destroy old systems and create space for new ones.** Don't just survive disruption—look for what it makes possible.
+1. **Crises destroy old systems and create space for new ones.** Don't just survive disruption - look for what it makes possible.
 
 2. **Constraints drive creativity.** Limited resources often produce more innovative solutions than unlimited budgets.
 
@@ -168,7 +168,7 @@ Tesla's adversity didn't diminish his innovation; it clarified it. Freed from Ed
     difficulty: "beginner",
     read_time: 9,
     seo_title: "Innovation Through Adversity: How Crises Drive Breakthroughs | History.ai",
-    seo_description: "Discover how history's greatest innovations emerged from crisis—from the Renaissance to WWII technology. Learn to find opportunity in adversity.",
+    seo_description: "Discover how history's greatest innovations emerged from crisis - from the Renaissance to WWII technology. Learn to find opportunity in adversity.",
     created_at: "2024-02-01",
   },
   {
@@ -189,7 +189,7 @@ But Rome's economy had a fatal flaw: it was ultimately extractive. Conquest prov
 
 Britain's empire was built not primarily on military power but on economic innovation. The Industrial Revolution (1760-1840) gave Britain a manufacturing advantage that no other nation could match. Combined with the Royal Navy's control of sea lanes and a sophisticated financial system centered on the City of London, Britain created an economic empire that spanned the globe.
 
-The empire declined when other nations—particularly Germany and the United States—industrialized and eliminated Britain's manufacturing advantage. Two world wars drained Britain's financial reserves, and the economic logic of empire collapsed.
+The empire declined when other nations - particularly Germany and the United States - industrialized and eliminated Britain's manufacturing advantage. Two world wars drained Britain's financial reserves, and the economic logic of empire collapsed.
 
 ## Key Takeaways
 
@@ -228,23 +228,23 @@ The empire declined when other nations—particularly Germany and the United Sta
     title: "The Power of Nonviolent Resistance",
     subtitle: "How Gandhi, King, and Mandela Changed the World Without Armies",
     category: "Revolution",
-    content: `In 1930, a thin man in a white dhoti walked 240 miles to the sea to make salt. This seemingly absurd act—Mahatma Gandhi's Salt March—struck at the heart of British imperial authority in India and demonstrated a force more powerful than any army: moral authority wielded through disciplined nonviolence.
+    content: `In 1930, a thin man in a white dhoti walked 240 miles to the sea to make salt. This seemingly absurd act - Mahatma Gandhi's Salt March - struck at the heart of British imperial authority in India and demonstrated a force more powerful than any army: moral authority wielded through disciplined nonviolence.
 
 ## The Philosophy of Satyagraha
 
-Gandhi's concept of satyagraha (Sanskrit for "truth-force" or "soul-force") was not passive resistance—it was active, disciplined confrontation with injustice that refused to use the oppressor's tools of violence. The theory was simple but revolutionary: when the oppressed refuse to cooperate with oppression, while accepting suffering without retaliation, they expose the moral bankruptcy of the oppressor and win the sympathy of observers.
+Gandhi's concept of satyagraha (Sanskrit for "truth-force" or "soul-force") was not passive resistance - it was active, disciplined confrontation with injustice that refused to use the oppressor's tools of violence. The theory was simple but revolutionary: when the oppressed refuse to cooperate with oppression, while accepting suffering without retaliation, they expose the moral bankruptcy of the oppressor and win the sympathy of observers.
 
-The Salt March illustrates this perfectly. By walking to the sea and making salt—violating the British salt tax—Gandhi did something technically illegal but morally unassailable. When British authorities beat unarmed marchers at the Dharasana Salt Works, the resulting media coverage turned world opinion against British rule.
+The Salt March illustrates this perfectly. By walking to the sea and making salt - violating the British salt tax - Gandhi did something technically illegal but morally unassailable. When British authorities beat unarmed marchers at the Dharasana Salt Works, the resulting media coverage turned world opinion against British rule.
 
 ## Dr. Martin Luther King Jr. and the American Civil Rights Movement
 
 King explicitly studied Gandhi's methods and adapted them to the American context. The Montgomery Bus Boycott (1955-1956), the sit-ins, the Freedom Rides, and the March on Washington all employed disciplined nonviolence to expose the brutality of segregation.
 
-The Birmingham Campaign of 1963 was perhaps the most strategically brilliant. King chose Birmingham specifically because its public safety commissioner, Bull Connor, was likely to respond with violence. When Connor turned fire hoses and police dogs on peaceful marchers—many of them children—the resulting images broadcast worldwide changed public opinion and led directly to the Civil Rights Act of 1964.
+The Birmingham Campaign of 1963 was perhaps the most strategically brilliant. King chose Birmingham specifically because its public safety commissioner, Bull Connor, was likely to respond with violence. When Connor turned fire hoses and police dogs on peaceful marchers - many of them children - the resulting images broadcast worldwide changed public opinion and led directly to the Civil Rights Act of 1964.
 
 ## Key Takeaways
 
-1. **Nonviolence is not weakness—it is strategic discipline.** It requires more courage than violence and is far harder to sustain.
+1. **Nonviolence is not weakness - it is strategic discipline.** It requires more courage than violence and is far harder to sustain.
 
 2. **Moral authority can defeat military and political power.** When an oppressor is exposed as morally bankrupt, their power erodes from within.
 
@@ -252,7 +252,7 @@ The Birmingham Campaign of 1963 was perhaps the most strategically brilliant. Ki
 
 4. **Training and discipline are essential.** Successful nonviolent movements train their participants extensively to maintain composure under provocation.
 
-5. **Choose your battles strategically.** Gandhi chose salt, King chose Birmingham, Mandela chose reconciliation—each selected the battlefield where moral authority would be maximized.`,
+5. **Choose your battles strategically.** Gandhi chose salt, King chose Birmingham, Mandela chose reconciliation - each selected the battlefield where moral authority would be maximized.`,
     historical_examples: [
       "Gandhi's Salt March (1930)",
       "MLK's Birmingham Campaign (1963)",
@@ -283,15 +283,15 @@ The Birmingham Campaign of 1963 was perhaps the most strategically brilliant. Ki
 
 ## Cleopatra: The Diplomat-Queen
 
-Cleopatra VII was not the seductress of Hollywood legend—she was one of the most formidable political minds of the ancient world. Speaking nine languages, educated in mathematics and philosophy, she maintained Egyptian independence against the expanding Roman Republic for two decades through brilliant diplomacy and economic strategy. She was the first Ptolemaic ruler to learn the Egyptian language, connecting with her subjects in ways her predecessors never had.
+Cleopatra VII was not the seductress of Hollywood legend - she was one of the most formidable political minds of the ancient world. Speaking nine languages, educated in mathematics and philosophy, she maintained Egyptian independence against the expanding Roman Republic for two decades through brilliant diplomacy and economic strategy. She was the first Ptolemaic ruler to learn the Egyptian language, connecting with her subjects in ways her predecessors never had.
 
 ## Hildegard of Bingen: Medieval Polymath
 
-In the 12th century, while most women were denied education, Hildegard of Bingen (1098-1179) composed symphonies, wrote medical and botanical texts, invented a language, corresponded with popes and kings, and produced visionary theological works. She was essentially the medieval equivalent of Leonardo da Vinci—but her gender meant her genius was long overlooked.
+In the 12th century, while most women were denied education, Hildegard of Bingen (1098-1179) composed symphonies, wrote medical and botanical texts, invented a language, corresponded with popes and kings, and produced visionary theological works. She was essentially the medieval equivalent of Leonardo da Vinci - but her gender meant her genius was long overlooked.
 
 ## Ada Lovelace: Mother of Computing
 
-Ada Lovelace's 1843 notes on Charles Babbage's Analytical Engine contained the first computer program and, more remarkably, the first articulation that computing machines could do more than calculate—they could create. This vision anticipated the digital revolution by over a century.
+Ada Lovelace's 1843 notes on Charles Babbage's Analytical Engine contained the first computer program and, more remarkably, the first articulation that computing machines could do more than calculate - they could create. This vision anticipated the digital revolution by over a century.
 
 ## Key Takeaways
 
@@ -303,7 +303,7 @@ Ada Lovelace's 1843 notes on Charles Babbage's Analytical Engine contained the f
 
 4. **Diverse leadership produces better outcomes.** Societies that included women in leadership and intellectual life consistently outperformed those that excluded them.
 
-5. **Recovery of lost voices enriches everyone.** Rediscovering women's historical contributions doesn't diminish male achievements—it provides a more complete and useful understanding of human capability.`,
+5. **Recovery of lost voices enriches everyone.** Rediscovering women's historical contributions doesn't diminish male achievements - it provides a more complete and useful understanding of human capability.`,
     historical_examples: [
       "Cleopatra's 20-year diplomatic campaign to preserve Egypt",
       "Hildegard of Bingen's 12th-century polymath achievements",

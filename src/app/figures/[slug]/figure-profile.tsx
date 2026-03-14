@@ -65,7 +65,7 @@ export default function FigureProfilePage({ figure }: FigureProfilePageProps) {
                     <Badge variant="parchment" className="gap-1 bg-white/10 border-white/20 text-white/80">
                       <Calendar className="h-3 w-3" />
                       <span className="font-mono text-xs">
-                        {figure.born} — {figure.died}
+                        {figure.born} - {figure.died}
                       </span>
                     </Badge>
                     <Badge variant="outline" className="gap-1 border-white/20 text-white/70">
@@ -182,7 +182,7 @@ export default function FigureProfilePage({ figure }: FigureProfilePageProps) {
                   <CardContent className="p-5">
                     <Quote className="h-5 w-5 text-amber-400/40 mb-2" />
                     <p className="font-mono text-sm text-white/80 italic leading-relaxed">&ldquo;{quote}&rdquo;</p>
-                    <p className="font-body text-xs text-white/40 mt-3">— {figure.name}</p>
+                    <p className="font-body text-xs text-white/40 mt-3">- {figure.name}</p>
                   </CardContent>
                 </Card>
               ))}

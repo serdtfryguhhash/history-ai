@@ -87,7 +87,7 @@ export default function Footer() {
               &copy; {new Date().getFullYear()} History.ai. All rights reserved.
             </p>
             <p className="text-xs font-mono text-parchment-400 italic">
-              &ldquo;Those who cannot remember the past are condemned to repeat it.&rdquo; &mdash; George
+              &ldquo;Those who cannot remember the past are condemned to repeat it.&rdquo; - George
               Santayana
             </p>
           </div>

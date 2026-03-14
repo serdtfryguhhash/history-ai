@@ -180,7 +180,7 @@ export const learningPaths: LearningPath[] = [
     id: "lp4",
     slug: "age-of-exploration",
     title: "Age of Exploration",
-    description: "Discover how European voyagers connected the world — and the devastating consequences for indigenous peoples.",
+    description: "Discover how European voyagers connected the world - and the devastating consequences for indigenous peoples.",
     weeks: 4,
     totalDays: 28,
     category: "Diplomacy",
@@ -211,7 +211,7 @@ export const learningPaths: LearningPath[] = [
         "How should we evaluate historical figures by the standards of their time vs. ours?",
         "What are the unintended consequences of connecting distant cultures?",
         "How do colonial legacies shape modern geopolitics?",
-        "What role does trade play in building—or breaking—relationships between civilizations?",
+        "What role does trade play in building - or breaking - relationships between civilizations?",
         "How does human activity reshape ecosystems?",
       ];
       const fig = figures[i % figures.length];
@@ -229,7 +229,7 @@ export const learningPaths: LearningPath[] = [
     id: "lp5",
     slug: "ancient-civilizations",
     title: "Ancient Civilizations",
-    description: "Journey through the cradles of civilization — Mesopotamia, Egypt, the Indus Valley, and China.",
+    description: "Journey through the cradles of civilization - Mesopotamia, Egypt, the Indus Valley, and China.",
     weeks: 6,
     totalDays: 42,
     category: "Governance",

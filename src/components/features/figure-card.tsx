@@ -47,7 +47,7 @@ export default function FigureCard({ figure, index = 0 }: FigureCardProps) {
 
             {/* Dates */}
             <p className="font-mono text-xs text-ink-300 mt-2">
-              {figure.born} — {figure.died}
+              {figure.born} - {figure.died}
             </p>
 
             {/* Bio */}

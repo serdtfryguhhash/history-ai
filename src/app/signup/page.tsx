@@ -62,7 +62,7 @@ export default function SignupPage() {
               <p className="font-mono text-sm text-ink-500 italic">
                 &ldquo;The only thing new in the world is the history you do not know.&rdquo;
               </p>
-              <p className="font-body text-xs text-ink-300 mt-2">— Harry S. Truman</p>
+              <p className="font-body text-xs text-ink-300 mt-2">- Harry S. Truman</p>
             </div>
           </div>
 

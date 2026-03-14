@@ -100,7 +100,7 @@ export default function ConversationsPage() {
         {
           id: "welcome",
           role: "assistant",
-          content: `Greetings. I am ${figure.name}, ${figure.title}. I have lived through extraordinary times — ${figure.era} — from ${figure.born} to ${figure.died}. What would you ask of me?`,
+          content: `Greetings. I am ${figure.name}, ${figure.title}. I have lived through extraordinary times - ${figure.era} - from ${figure.born} to ${figure.died}. What would you ask of me?`,
         },
       ]);
     }
@@ -148,7 +148,7 @@ export default function ConversationsPage() {
       const assistantMessage: Message = {
         id: (Date.now() + 1).toString(),
         role: "assistant",
-        content: data.response || "Forgive me—the connection between our ages has been disrupted.",
+        content: data.response || "Forgive me - the connection between our ages has been disrupted.",
       };
 
       const updatedMessages = [...newMessages, assistantMessage];
@@ -161,7 +161,7 @@ export default function ConversationsPage() {
         {
           id: (Date.now() + 1).toString(),
           role: "assistant",
-          content: "Forgive me—the connection between our ages has been momentarily disrupted. Please try again.",
+          content: "Forgive me - the connection between our ages has been momentarily disrupted. Please try again.",
         },
       ]);
     } finally {

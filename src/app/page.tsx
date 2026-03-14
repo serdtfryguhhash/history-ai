@@ -243,7 +243,7 @@ export default function HomePage() {
             <blockquote className="font-display text-2xl md:text-3xl font-bold text-parchment-50 italic leading-relaxed mb-6">
               &ldquo;The farther backward you can look, the farther forward you are likely to see.&rdquo;
             </blockquote>
-            <p className="font-mono text-accent-300">— Winston Churchill</p>
+            <p className="font-mono text-accent-300">- Winston Churchill</p>
           </motion.div>
         </div>
       </section>
@@ -366,7 +366,7 @@ export default function HomePage() {
               What Would History Do?
             </h2>
             <p className="font-body text-white/70 max-w-xl mx-auto mb-8">
-              Every problem you face has been faced before—by emperors, generals, scientists, and
+              Every problem you face has been faced before - by emperors, generals, scientists, and
               revolutionaries. Let their experience guide your decisions.
             </p>
             <Link href="/ask">

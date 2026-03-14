@@ -55,7 +55,7 @@ Respond ONLY with valid JSON:
         summary: "Keep exploring! Every figure you discover adds to your understanding of human history.",
         knowledgeGaps: ["Ancient civilizations", "Modern era"],
         recommendations: ["Marcus Aurelius", "Cleopatra VII", "Leonardo da Vinci"],
-        funFact: "The Roman Empire at its peak was home to roughly 70 million people — about 25% of the world's population at the time.",
+        funFact: "The Roman Empire at its peak was home to roughly 70 million people - about 25% of the world's population at the time.",
         encouragement: "As Confucius said, 'It does not matter how slowly you go as long as you do not stop.'",
       });
     }

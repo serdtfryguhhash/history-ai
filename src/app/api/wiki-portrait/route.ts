@@ -20,7 +20,7 @@ export async function GET(request: NextRequest) {
     if (wikiRes.ok) {
       const data = await wikiRes.json();
       if (data.thumbnail?.source) {
-        // Redirect to the Wikipedia thumbnail — browsers follow this for <img> tags
+        // Redirect to the Wikipedia thumbnail - browsers follow this for <img> tags
         return new NextResponse(null, {
           status: 307,
           headers: {
